@@ -1,0 +1,20 @@
+{
+  "redirects": [
+    {
+      "source": "/home",
+      "destination": "/"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "downloads.sunhouse.tech"
+        }
+      ],
+      "destination": "/downloads/:path*"
+    }
+  ]
+}
