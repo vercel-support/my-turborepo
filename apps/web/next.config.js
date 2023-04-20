@@ -1,8 +1,9 @@
 module.exports = {
   reactStrictMode: true,
   transpilePackages: ["ui"],
-  redirects() {
-    return [
+  rewrites() {
+    return {
+      beforeFiles: [
       {
         source: "/:path*",
         has: [
@@ -14,6 +15,7 @@ module.exports = {
         destination: "/downloads/:path*",
         permanent: false,
       },
-    ];
+    ],
+  };
   },
 };
