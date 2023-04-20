@@ -13,7 +13,6 @@ module.exports = {
           },
         ],
         destination: "/downloads/:path*",
-        permanent: false,
       },
     ],
   };
