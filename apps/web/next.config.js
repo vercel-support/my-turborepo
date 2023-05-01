@@ -13,7 +13,7 @@ module.exports = {
           },
         ],
         permanent: true,
-        destination: "/downloads/:path*",
+        destination: "https://anj.today/downloads/:path*",
       },
     ]
   },
