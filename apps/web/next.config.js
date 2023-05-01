@@ -9,7 +9,7 @@ module.exports = {
         has: [
           {
             type: "host",
-            value: "downloads.localhost",
+            value: "downloads.anj.today",
           },
         ],
         permanent: true,
