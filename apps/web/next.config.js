@@ -1,20 +1,20 @@
 module.exports = {
   reactStrictMode: true,
   transpilePackages: ["ui"],
-  rewrites() {
-    return {
-      beforeFiles: [
+  
+  async redirects() {
+    return [
       {
         source: "/:path*",
         has: [
           {
             type: "host",
-            value: "subdomain.anj.today",
+            value: "downloads.localhost",
           },
         ],
+        permanent: true,
         destination: "/downloads/:path*",
       },
-    ],
-  };
+    ]
   },
 };
